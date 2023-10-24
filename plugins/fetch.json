@@ -1,0 +1,13 @@
+{
+  "clevertap-cordova": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/CleverTap/clevertap-cordova.git"
+    },
+    "is_top_level": true,
+    "variables": {
+      "CLEVERTAP_ACCOUNT_ID": "WRZ-KK5-656Z",
+      "CLEVERTAP_TOKEN": "533-120"
+    }
+  }
+}

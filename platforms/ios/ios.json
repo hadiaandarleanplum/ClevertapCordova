@@ -1,0 +1,84 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "*-Info.plist": {
+        "parents": {
+          "CleverTapAccountID": [
+            {
+              "xml": "<string>WRZ-KK5-656Z</string>",
+              "count": 1
+            }
+          ],
+          "CleverTapToken": [
+            {
+              "xml": "<string>533-120</string>",
+              "count": 1
+            }
+          ],
+          "CleverTapRegion": [
+            {
+              "xml": "<string> </string>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*/Entitlements-Debug.plist": {
+        "parents": {
+          "aps-environment": [
+            {
+              "xml": "<string>development</string>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*/Entitlements-Release.plist": {
+        "parents": {
+          "aps-environment": [
+            {
+              "xml": "<string>production</string>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"CleverTapPlugin\"><param name=\"ios-package\" value=\"CleverTapPlugin\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "clevertap-cordova": {
+      "CLEVERTAP_ACCOUNT_ID": "WRZ-KK5-656Z",
+      "CLEVERTAP_TOKEN": "533-120",
+      "CLEVERTAP_REGION": " ",
+      "PACKAGE_NAME": "com.example.hello"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "clevertap-cordova.CleverTap",
+      "file": "plugins/clevertap-cordova/www/CleverTap.js",
+      "pluginId": "clevertap-cordova",
+      "clobbers": [
+        "CleverTap"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "clevertap-cordova": "2.7.1"
+  }
+}
